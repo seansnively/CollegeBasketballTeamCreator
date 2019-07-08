@@ -9,6 +9,11 @@ export class CartService {
     this.items.push(product);
   }
 
+  removeFromCart(product) {
+    var index = this.items.findIndex(product);
+    this.items.splice(index, 1);
+  }
+
   getItems() {
     return this.items;
   }
