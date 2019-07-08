@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { CartComponent } from './cart/cart.component';
+import { TeamComponent } from './team/team.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import {CheckoutRoutingModule} from './checkout-routing.module'
 @NgModule({
@@ -11,11 +11,11 @@ import {CheckoutRoutingModule} from './checkout-routing.module'
     ReactiveFormsModule
   ],
   declarations: [
-    CartComponent,
+    TeamComponent,
     ShippingComponent
     ],
   exports: [
-    CartComponent,
+    TeamComponent,
     ShippingComponent
   ],
 })

@@ -4,10 +4,10 @@ import { FormBuilder } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-cart',
-  templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  templateUrl: './team.component.html',
+  styleUrls: ['./team.component.css']
 })
-export class CartComponent implements OnInit {
+export class TeamComponent implements OnInit {
   items;
   cartService1; //idk if its angular or stackblitz but without this variabale cartService methods can only be called like 10% of the time
   checkoutForm;
