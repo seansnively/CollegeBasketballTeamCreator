@@ -15,7 +15,7 @@ export class TeamComponent implements OnInit {
   constructor(private cartService: CartService, private formBuilder: FormBuilder,) {
     this.cartService1 = cartService;
     this.items = this.cartService1.getItems();
-
+    console.log(this.items[0]);
     this.checkoutForm = this.formBuilder.group({
       name: 'My Team'
     });

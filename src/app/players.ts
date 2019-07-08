@@ -10,6 +10,10 @@ export const players = [
   {
     name: 'Mamadi Diakite',
     description: ''
+  },
+  {
+    name: 'Blake Harris',
+    description: ''
   }
 ];
 

@@ -19,6 +19,7 @@ export class DraganddropComponent implements OnInit {
 
   constructor(private cartService: CartService) {
     this.cartService1 = cartService;
+    
     for(let player of players){
       this.players.push(player);
     }
@@ -31,9 +32,10 @@ export class DraganddropComponent implements OnInit {
   
 
   drop(event: CdkDragDrop<string[]>) {
+    //get previous team size
     this.myteamprevsize = this.myteam.length;
-    var player = event.previousContainer.data;
-    console.log(player);
+    
+    //perform drag and drop
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
@@ -42,13 +44,21 @@ export class DraganddropComponent implements OnInit {
                         event.previousIndex,
                         event.currentIndex);
     }
+    //get current team size
     this.myteamsize = this.myteam.length;
-    for (let player of this.myteam){
-      //console.log(player.name);
-    }
+    var player; 
 
-    console.log(this.myteamsize);
-    console.log(this.myteamprevsize);
-    
+    if(this.myteamsize > this.myteamprevsize){
+      player = this.myteam[event.currentIndex];
+      console.log(player.name);
+      console.log(event.previousIndex);
+      this.cartService1.addToCart(player);
+    }
+    else if(this.myteamsize < this.myteamprevsize){
+      player = this.myteam[event.currentIndex];
+      console.log(player.name);
+      console.log(event.previousIndex);
+      this.cartService1.removeFromCart(player);
+    }
   }
 }
