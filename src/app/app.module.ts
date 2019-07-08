@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './inventory/product-list/product-list.component';
@@ -12,7 +12,7 @@ import { CartService } from './cart.service';
 //import { CartComponent } from './checkout/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 //import { ShippingComponent } from './checkout/shipping/shipping.component';
-
+import {DemoMaterialModule} from './material-module';
 import { TeambuilderModule } from './teambuilder/teambuilder.module';
 import { InventoryModule } from './inventory/inventory.module';
 @NgModule({
@@ -22,6 +22,7 @@ import { InventoryModule } from './inventory/inventory.module';
     ReactiveFormsModule,
     TeambuilderModule,
     InventoryModule,
+    DemoMaterialModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     //  { path: 'products/:productId', component: ProductDetailsComponent },
