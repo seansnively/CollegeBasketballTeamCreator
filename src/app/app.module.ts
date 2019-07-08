@@ -13,14 +13,14 @@ import { CartService } from './cart.service';
 import { HttpClientModule } from '@angular/common/http';
 //import { ShippingComponent } from './checkout/shipping/shipping.component';
 
-import { CheckoutModule } from './checkout/checkout.module';
+import { TeambuilderModule } from './teambuilder/teambuilder.module';
 import { InventoryModule } from './inventory/inventory.module';
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    CheckoutModule,
+    TeambuilderModule,
     InventoryModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },

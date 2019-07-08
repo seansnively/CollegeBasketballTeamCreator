@@ -5,7 +5,7 @@ import { TeamComponent } from './team/team.component';
 import { ShippingComponent } from './shipping/shipping.component';
  
 const routes: Routes = [
-    {   path: 'cart',   component: TeamComponent   },
+    {   path: 'MyTeam',   component: TeamComponent   },
     {   path: 'shipping',   component: ShippingComponent   },
   ];
  
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CheckoutRoutingModule { }
+export class TeambuilderRoutingModule { }

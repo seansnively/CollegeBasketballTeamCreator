@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
 import { ShippingComponent } from './shipping/shipping.component';
-import {CheckoutRoutingModule} from './checkout-routing.module'
+import {TeambuilderRoutingModule} from './teambuilder-routing.module'
 @NgModule({
   imports: [
     CommonModule,
-    CheckoutRoutingModule,
+    TeambuilderRoutingModule,
     ReactiveFormsModule
   ],
   declarations: [
@@ -19,4 +19,4 @@ import {CheckoutRoutingModule} from './checkout-routing.module'
     ShippingComponent
   ],
 })
-export class CheckoutModule { }
+export class TeambuilderModule { }
