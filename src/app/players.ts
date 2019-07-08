@@ -1,17 +1,14 @@
-export const products = [
+export const players = [
   {
-    name: 'Phone XL',
-    price: 799,
+    name: 'Markell Johnson',
     description: 'A large phone with one of the best screens'
   },
   {
-    name: 'Phone Mini',
-    price: 699,
+    name: 'Kihei Clark',
     description: 'A great phone with one of the best cameras'
   },
   {
-    name: 'Phone Standard',
-    price: 299,
+    name: 'Mamadi Diakite',
     description: ''
   }
 ];

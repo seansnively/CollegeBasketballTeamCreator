@@ -1,18 +1,4 @@
 <div class="example-container">
-  <h2>Players</h2>
-
-  <div
-    cdkDropList
-    #playersList="cdkDropList"
-    [cdkDropListData]="players"
-    [cdkDropListConnectedTo]="[myteamList]"
-    class="example-list"
-    (cdkDropListDropped)="drop($event)">
-    <div class="example-box" *ngFor="let item of players" cdkDrag>{{item.name}}</div>
-  </div>
-</div>
-
-<div class="example-container">
   <h2>My Team</h2>
 
   <div
@@ -26,6 +12,19 @@
   </div>
 </div>
 
+<div class="example-container">
+  <h2>Players</h2>
+
+  <div
+    cdkDropList
+    #playersList="cdkDropList"
+    [cdkDropListData]="players"
+    [cdkDropListConnectedTo]="[myteamList]"
+    class="example-list"
+    (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let item of players" cdkDrag>{{item.name}}</div>
+  </div>
+</div>
 
 
 <!-- Copyright 2019 Google Inc. All Rights Reserved.

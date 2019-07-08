@@ -7,9 +7,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductListComponent } from './product-list/product-list.component';
 import { DraganddropComponent } from './draganddrop/draganddrop.component';
 const routes: Routes = [
-    { path: '', component: ProductListComponent },
+    //{ path: '', component: ProductListComponent },
     { path: 'products/:productId', component: ProductDetailsComponent },
-    { path: 'draganddrop', component: DraganddropComponent}
+    { path: '', component: DraganddropComponent}
   ];
  
 @NgModule({
