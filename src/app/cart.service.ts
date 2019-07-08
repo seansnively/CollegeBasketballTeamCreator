@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({providedIn: 'root'})
 export class CartService {
   items = [];
+  previtems = [];
   constructor(private http: HttpClient) { }
 
   addToCart(product) {
@@ -10,7 +11,7 @@ export class CartService {
   }
 
   removeFromCart(product) {
-    var index = this.items.findIndex(product);
+    var index = this.items.indexOf(product);
     this.items.splice(index, 1);
   }
 
@@ -19,6 +20,7 @@ export class CartService {
   }
 
   clearCart() {
+    this.previtems = this.items;
     this.items = [];
     return this.items;
   }

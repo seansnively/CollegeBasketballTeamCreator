@@ -51,13 +51,13 @@ export class DraganddropComponent implements OnInit {
     if(this.myteamsize > this.myteamprevsize){
       player = this.myteam[event.currentIndex];
       console.log(player.name);
-      console.log(event.previousIndex);
+      console.log(event.currentIndex);
       this.cartService1.addToCart(player);
     }
     else if(this.myteamsize < this.myteamprevsize){
-      player = this.myteam[event.currentIndex];
+      player = this.players[event.currentIndex];
       console.log(player.name);
-      console.log(event.previousIndex);
+      console.log(event.currentIndex);
       this.cartService1.removeFromCart(player);
     }
   }

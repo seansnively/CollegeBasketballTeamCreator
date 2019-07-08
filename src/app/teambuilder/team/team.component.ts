@@ -29,7 +29,7 @@ export class TeamComponent implements OnInit {
     console.warn('Your order has been submitted', customerData);
     this.teamName = customerData.name;
     console.log(this.teamName);
-    this.items = this.cartService1.clearCart();
+    //this.items = this.cartService1.clearCart();
     this.checkoutForm.reset();
   }
 }
