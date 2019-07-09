@@ -29,7 +29,9 @@ export class DraganddropComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+  onPrevTeam(){
+    this.myteam = this.cartService.previtems;
+  }
 
   drop(event: CdkDragDrop<string[]>) {
     //get previous team size
