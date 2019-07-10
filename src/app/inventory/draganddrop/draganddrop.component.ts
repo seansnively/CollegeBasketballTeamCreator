@@ -31,6 +31,11 @@ export class DraganddropComponent implements OnInit {
 
   onPrevTeam(){
     this.myteam = this.cartService.previtems;
+    for(let player of this.myteam){
+      this.cartService1.addToCart(player);
+      var index = this.players.indexOf(player);
+      this.players.splice(index, 1);
+    }
   }
 
   drop(event: CdkDragDrop<string[]>) {
