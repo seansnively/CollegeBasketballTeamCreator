@@ -5,16 +5,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './inventory/product-list/product-list.component';
 import { ProductAlertsComponent } from './inventory/product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './inventory/product-details/product-details.component';
 import { CartService } from './cart.service';
 //import { CartComponent } from './checkout/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 //import { ShippingComponent } from './checkout/shipping/shipping.component';
-import {DemoMaterialModule} from './material-module';
+import { DemoMaterialModule} from './material-module';
 import { TeambuilderModule } from './teambuilder/teambuilder.module';
 import { InventoryModule } from './inventory/inventory.module';
+import { DraganddropComponent } from './inventory/draganddrop/draganddrop.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,7 +24,7 @@ import { InventoryModule } from './inventory/inventory.module';
     InventoryModule,
     DemoMaterialModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: DraganddropComponent },
     //  { path: 'products/:productId', component: ProductDetailsComponent },
       //{ path: 'cart', component: CartComponent },
       //{ path: 'shipping', component: ShippingComponent },

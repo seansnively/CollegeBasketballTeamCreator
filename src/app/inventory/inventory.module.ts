@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ProductListComponent } from './product-list/product-list.component';
 import {CdkDragDrop, moveItemInArray, transferArrayItem} from '@angular/cdk/drag-drop';
 import { InventoryRouting } from './inventory-routing.module';
 import { DraganddropComponent } from './draganddrop/draganddrop.component';
@@ -17,7 +16,6 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   declarations: [
     ProductAlertsComponent,
     ProductDetailsComponent,
-    ProductListComponent,
     DraganddropComponent
     ]
 })

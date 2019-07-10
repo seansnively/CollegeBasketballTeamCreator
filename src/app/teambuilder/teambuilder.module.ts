@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
-import { ShippingComponent } from './shipping/shipping.component';
 import {TeambuilderRoutingModule} from './teambuilder-routing.module'
 @NgModule({
   imports: [
@@ -11,12 +10,10 @@ import {TeambuilderRoutingModule} from './teambuilder-routing.module'
     ReactiveFormsModule
   ],
   declarations: [
-    TeamComponent,
-    ShippingComponent
+    TeamComponent
     ],
   exports: [
-    TeamComponent,
-    ShippingComponent
+    TeamComponent
   ],
 })
 export class TeambuilderModule { }
