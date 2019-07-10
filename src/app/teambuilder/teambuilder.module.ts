@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
-import {TeambuilderRoutingModule} from './teambuilder-routing.module'
+import {TeambuilderRoutingModule} from './teambuilder-routing.module';
+import { TeamratingcalcComponent } from './teamratingcalc/teamratingcalc.component'
 @NgModule({
   imports: [
     CommonModule,
@@ -10,7 +11,8 @@ import {TeambuilderRoutingModule} from './teambuilder-routing.module'
     ReactiveFormsModule
   ],
   declarations: [
-    TeamComponent
+    TeamComponent,
+    TeamratingcalcComponent
     ],
   exports: [
     TeamComponent

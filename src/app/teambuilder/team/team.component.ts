@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../cart.service';
 import { FormBuilder } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TeamratingcalcComponent } from '../teamratingcalc/teamratingcalc.component';
 @Component({
   selector: 'app-cart',
   templateUrl: './team.component.html',

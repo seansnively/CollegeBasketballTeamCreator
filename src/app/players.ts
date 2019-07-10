@@ -1,11 +1,11 @@
 export const players = [
   {
     name: 'Markell Johnson',
-    description: 'A large phone with one of the best screens'
+    description: ''
   },
   {
     name: 'Kihei Clark',
-    description: 'A great phone with one of the best cameras'
+    description: ''
   },
   {
     name: 'Mamadi Diakite',
@@ -13,6 +13,10 @@ export const players = [
   },
   {
     name: 'Blake Harris',
+    description: ''
+  },
+  {
+    name: 'Terry Rozier',
     description: ''
   }
 ];
